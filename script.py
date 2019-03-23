@@ -1,7 +1,6 @@
 import sys
 import os
 from filelock import FileLock
-import time
 
 if(len(sys.argv) != 4):
     print("INCORRECT NUMBER OF ARGUMENTS PASSED.\nEXITING NOW.")
