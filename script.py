@@ -35,6 +35,14 @@ try:
     print("LOCKS ACQUIRED SUCCESSFULLY\n")
 except:
     print("LOCKS COULD NOT BE ACQUIRED.\nEXITING NOW.")
+    try:
+        os.remove(srcFile + '.lock')
+    except:
+        pass
+    try:
+        os.remove(dstFile + '.lock')
+    except:
+        pass
     exit()
 
 if operCode == '0':
