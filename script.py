@@ -2,7 +2,7 @@ import sys
 import os
 from filelock import FileLock
 
-if(len(sys.argv) != 4):
+if len(sys.argv) != 4:
     print("INCORRECT NUMBER OF ARGUMENTS PASSED.\nEXITING NOW.")
     exit()
 
